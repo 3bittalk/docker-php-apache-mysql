@@ -1,1 +1,1 @@
-# php-apache-mysql
+# php-apache in docker with mysql support
