@@ -1,6 +1,7 @@
 FROM php:8.0.3-apache-buster
 
-RUN apt-get install -y vim wget zlib1g-dev zip
+
+RUN apt-get update && apt-get install apt-file -y && apt-file update && apt-get install vim wget libzip-dev zip -y
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql zip && docker-php-ext-enable pdo_mysql && a2enmod rewrite
 
