@@ -4,6 +4,7 @@
 if [ -z "$1" ]
   then
     echo "No argument supplied. Provide version"
+    exit;
 fi
 
 echo "Build 3bittalk/php-apache-mysql:$1 ..."

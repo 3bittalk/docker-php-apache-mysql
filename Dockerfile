@@ -1,4 +1,4 @@
-FROM php:8.0.3-apache-buster
+FROM php:8.3-apache-bookworm
 
 
 RUN apt-get update && apt-get install apt-file -y && apt-file update && apt-get install vim wget libzip-dev zip -y
